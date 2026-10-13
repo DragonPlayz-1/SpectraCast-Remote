@@ -1,0 +1,40 @@
+# Secrets and local pairing state
+.env
+.env.*
+!.env.example
+.spectradata/
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+build/
+dist/
+!src/spectracast/web/dist/
+!src/spectracast/web/dist/**
+
+# JavaScript tooling
+frontend/node_modules/
+.npm/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# The supplied protocol reference is development input, not part of the
+# branded SpectraCast distribution.
+androidtvremote2-main/
+
+# Local screenshot scratch files
+tmp-screenshots/

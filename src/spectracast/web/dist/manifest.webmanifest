@@ -1,0 +1,17 @@
+{
+  "name": "SpectraCast Remote",
+  "short_name": "SpectraCast",
+  "description": "A beautiful private remote for every screen in your space.",
+  "start_url": "/?source=pwa",
+  "display": "standalone",
+  "background_color": "#08090f",
+  "theme_color": "#08090f",
+  "icons": [
+    {
+      "src": "/assets/spectracast-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
