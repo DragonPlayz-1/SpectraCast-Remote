@@ -156,7 +156,7 @@ class SpectraCastRemoteProtocol(SpectraCastFramedProtocol):
             return
         try:
             await asyncio.wait_for(asyncio.shield(self._ready), timeout=timeout)
-        except TimeoutError as exc:
+        except asyncio.TimeoutError as exc:
             raise SpectraCastConnectionError(f"Device did not become ready within {timeout} seconds") from exc
 
     def dispatch(self, command: SpectraCastCommand) -> None:
